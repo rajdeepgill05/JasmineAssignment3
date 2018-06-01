@@ -40,8 +40,9 @@ describe("App", () => {
         expect(pc.hardDriveSpace).toBe(412)
         done();
       })
+    })
 
-
+    describe("installProgram", () => {
       lapi = new Computer;
       beforeEach(function(done){
         lapi.installProgram(600, function() {
